@@ -31,7 +31,7 @@ jobs:
           password: ${{ secrets.dckr_pat_rJCU2aLruNqZUz1Z2FHJYJnHY8Y }}
 
       - name: Build Docker image
-        run: docker build -t jsutseppe14/devOps_CaseStudy:latest .
+        run: docker build -t justseppe14/devOps_CaseStudy:latest .
 
       - name: Push Docker image to Docker Hub
         run: docker push justseppe14/devOps_CaseStudy:latest
