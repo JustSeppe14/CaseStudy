@@ -37,4 +37,4 @@ jobs:
         run: docker push justseppe14/devops_casestudy:latest
 
       - name: Run Docker container on a specific IP
-        run: docker run -d -p 8080:80 --ip 192.168.56.5 --name casestudy-container justseppe14/devops_casestudy:latest
+        run: docker run -d -p 8080:80 --name casestudy-container justseppe14/devops_casestudy:latest
