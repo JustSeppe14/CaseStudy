@@ -1,5 +1,5 @@
 # Use the .NET Core SDK as the base image for building the app
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /app
 
 # Copy the project files and restore dependencies
@@ -13,7 +13,7 @@ RUN dotnet build -c Release -o /app/build
 RUN dotnet publish -c Release -o /app/publish
 
 # Use a smaller runtime image for running the app
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS runtime
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
 WORKDIR /app
 COPY --from=build /app/publish .
 
