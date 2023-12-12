@@ -1,0 +1,37 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.x' # Adjust version if needed
+
+      - name: Build the ASP.NET application
+        run: dotnet build -c Release
+
+      - name: Publish the ASP.NET application
+        run: dotnet publish -c Release -o ./publish
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.justseppe14 }}
+          password: ${{ secrets.dckr_pat_rJCU2aLruNqZUz1Z2FHJYJnHY8Y }}
+
+      - name: Build Docker image
+        run: docker build -t jsutseppe14/devOps_CaseStudy:latest .
+
+      - name: Push Docker image to Docker Hub
+        run: docker push justseppe14/devOps_CaseStudy:latest
