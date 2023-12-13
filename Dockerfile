@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:3.1-nanoserver-1809 AS build
 ARG configuration=Release
 WORKDIR /src
 COPY ["./bike_site/bike_site.csproj", "bike_site/"]
-RUN dotnet restore "bike_site\bike_site.csproj"
+RUN dotnet restore "bike_site/bike_site.csproj"
 COPY . .
 WORKDIR "/src/bike_site"
 RUN dotnet build "bike_site.csproj" -c $configuration -o /app/build
