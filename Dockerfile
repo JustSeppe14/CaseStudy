@@ -1,24 +1,23 @@
-# Use the .NET Core SDK as the base image for building the app
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/aspnet:3.1-nanoserver-1809 AS base
 WORKDIR /app
+EXPOSE 5000
 
-# Copy the project files and restore dependencies
+ENV ASPNETCORE_URLS=http://*:5000
+
+FROM mcr.microsoft.com/dotnet/sdk:3.1-nanoserver-1809 AS build
+ARG configuration=Release
+WORKDIR /src
+COPY ["./bike_site/bike_site.csproj", "bike_site/"]
+RUN dotnet restore "bike_site\bike_site.csproj"
 COPY . .
-RUN dotnet restore
+WORKDIR "/src/bike_site"
+RUN dotnet build "bike_site.csproj" -c $configuration -o /app/build
 
-# Build the application
-RUN dotnet build -c Release -o /app/build
+FROM build AS publish
+ARG configuration=Release
+RUN dotnet publish "bike_site.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
 
-# Publish the application
-RUN dotnet publish -c Release -o /app/publish
-
-# Use a smaller runtime image for running the app
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
+FROM base AS final
 WORKDIR /app
-COPY --from=build /app/publish .
-
-# Expose the port
-EXPOSE 80
-
-# Set the entry point
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "bike_site.dll"]
