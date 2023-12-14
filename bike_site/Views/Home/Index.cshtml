@@ -34,10 +34,10 @@
                 <div class="item @(bike == Model.First() ? "active" : "")">
                     <img src="@bike.BikeImage.File.Url" alt="@bike.BikeImage.Title"/>
                     <div class="bike-details">
-                        <h2>@bike.Brand</h2>
-                        <h3>@bike.BikeModel</h3>
-                        <h3>@bike.Groupset</h3>
-                        <h3>@bike.Suspension</h3>
+                        <h2>Brand: @bike.Brand</h2>
+                        <h3>Model: @bike.BikeModel</h3>
+                        <h3>Gorupset: @bike.Groupset</h3>
+                        <h3>Suspension: @bike.Suspension</h3>
                         <h4>€ @bike.Price</h4>
                         <a href="@bike.BikeSite" target="_blank">Visit Site</a>
                     </div>
