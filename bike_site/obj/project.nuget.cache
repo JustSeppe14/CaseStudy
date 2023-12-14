@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zH3gq82klDBwjdFj8dbQ6MlW7QcQ9TpCfvrNJp5H2M8dLZydWI80kBSoZe+og2f60b9y9oxHOVlD9IYqkdK6SQ==",
+  "dgSpecHash": "KvVuBx3xnCUSDC+0ykokd1XNT2DdcLmpaHq2WLgJ3pO/vbbitGCX3W6iGPs4GjNSv7AwkUDSbk5Ontr3s/Uqvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\seppe\\OneDrive - Thomas More\\23-24\\Sem1\\DevOps\\Case_Study\\bike_site\\bike_site\\bike_site.csproj",
+  "projectFilePath": "C:\\Users\\seppe\\OneDrive - Thomas More\\23-24\\Sem1\\DevOps\\Case_Study\\CaseStudy\\bike_site\\bike_site.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seppe\\.nuget\\packages\\contentful.aspnetcore\\7.4.3\\contentful.aspnetcore.7.4.3.nupkg.sha512",
     "C:\\Users\\seppe\\.nuget\\packages\\contentful.csharp\\7.4.3\\contentful.csharp.7.4.3.nupkg.sha512",
@@ -160,7 +160,11 @@
     "C:\\Users\\seppe\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\seppe\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\seppe\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\seppe\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\seppe\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\seppe\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\seppe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\seppe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\seppe\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
 }
