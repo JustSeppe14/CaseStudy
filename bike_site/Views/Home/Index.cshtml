@@ -1,15 +1,67 @@
 ﻿@using Contentful.Core.Models
 
 @model ContentfulCollection<Bikes>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bikes Carousel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        .carousel-inner .item img {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px; /* Adjust the maximum width as needed */
+            height: auto;
+        }
+        .bike-details {
+            text-align: center;
+            display: none;
+        }
+        .item.active .bike-details {
+            display: block;
+        }
+    </style>
+</head>
+<body>
 
+    <div id="bikeCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            @foreach (var bike in Model)
+            {
+                <div class="item @(bike == Model.First() ? "active" : "")">
+                    <img src="@bike.BikeImage.File.Url" alt="@bike.BikeImage.Title"/>
+                    <div class="bike-details">
+                        <h2>@bike.Brand</h2>
+                        <h3>@bike.BikeModel</h3>
+                        <h4>€ @bike.Price</h4>
+                        <a href="@bike.BikeSite" target="_blank">Visit Site</a>
+                    </div>
+                </div>
+            }
+        </div>
 
+        <!-- Controls -->
+        <a class="left carousel-control" href="#bikeCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#bikeCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
-@foreach (var bike in Model)
-{
-    <img src="@bike.BikeImage.File.Url" alt="@bike.BikeImage.Title" width="200"/>
-    <h2>@bike.Brand</h2>
-    <h2>@bike.BikeModel</h2>
-    <h2>€ @bike.Price</h2>
-    <p>@bike.BikeSite</p>
-}
-
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#bikeCarousel').carousel();
+        });
+    </script>
+</body>
+</html>
