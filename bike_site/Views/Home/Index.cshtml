@@ -32,10 +32,10 @@
             @foreach (var bike in Model)
             {
                 <div class="item @(bike == Model.First() ? "active" : "")">
-                    <img src="@bike.BikeImage.File.Url" alt="@bike.BikeImage.Title"/>
-                    <div class="bike-details">
-                        <h2>Brand: @bike.Brand</h2>
-                        <h2>Model: @bike.BikeName</h2>
+                    <img src="@bike.BikeImage.File.Url" alt="@bike.BikeImage.Title"/>    
+                    <h2>Brand: @bike.Brand</h2>
+                    <h2>Model: @bike.BikeName</h2>
+                    <div class="bike-details">     
                         <h3>Type of bike: @bike.Type</h3>
                         <h3>Groupset: @bike.Groupset</h3>
                         <h3>Gears: @bike.AmountOfGears</h3>
