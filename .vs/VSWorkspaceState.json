@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bike_site",
+    "\\bike_site\\Models",
+    "\\bike_site\\Views",
+    "\\bike_site\\Views\\Home",
+    "\\bike_site\\Views\\Shared"
   ],
+  "SelectedNode": "\\bike_site\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

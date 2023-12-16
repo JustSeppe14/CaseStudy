@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "contentful.aspnetcore/7.4.3": {
+      "contentful.aspnetcore/7.5.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.2.2",
@@ -14,7 +14,7 @@
           "Microsoft.Extensions.Http": "6.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
           "System.Net.Http": "4.3.4",
-          "contentful.csharp": "7.4.3"
+          "contentful.csharp": "7.5.0"
         },
         "compile": {
           "lib/netstandard2.0/Contentful.AspNetCore.dll": {
@@ -27,7 +27,7 @@
           }
         }
       },
-      "contentful.csharp/7.4.3": {
+      "contentful.csharp/7.5.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -2808,28 +2808,28 @@
     }
   },
   "libraries": {
-    "contentful.aspnetcore/7.4.3": {
-      "sha512": "AXHHyKTfCQtchCoaymcNekjJFnsJCCzw8GWcRoAMnNnZDboQ4jR4dz0oSthqklXh7jOY+ueLJWfTDNs5bi9asw==",
+    "contentful.aspnetcore/7.5.0": {
+      "sha512": "4uae4Ta+oMLtzdTynusg8YRzreK6NFO6lz0Idv3w5mDdIbEJTFsbUqCjIhlCTq0HUKSjxEfhsNGpya3aD/egwQ==",
       "type": "package",
-      "path": "contentful.aspnetcore/7.4.3",
+      "path": "contentful.aspnetcore/7.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "contentful.aspnetcore.7.4.3.nupkg.sha512",
+        "contentful.aspnetcore.7.5.0.nupkg.sha512",
         "contentful.aspnetcore.nuspec",
         "lib/netstandard2.0/Contentful.AspNetCore.dll",
         "lib/netstandard2.0/Contentful.AspNetCore.pdb",
         "lib/netstandard2.0/Contentful.AspNetCore.xml"
       ]
     },
-    "contentful.csharp/7.4.3": {
-      "sha512": "EHT28p4X0/HH3MWn+NNL3gxHFJOeG5HJxjQuigW84VAiQaTwrZIn6oW8auVNtzGmEiQssDJx9rbxDA1QklgMNQ==",
+    "contentful.csharp/7.5.0": {
+      "sha512": "ppidtUNlQLiHCAcyVcL9NpJSFPVBA3ImIiDMZx2efsozMuW1htWQk6hjtBguoHgTRmGS+z+I292m4bX7DNY+xQ==",
       "type": "package",
-      "path": "contentful.csharp/7.4.3",
+      "path": "contentful.csharp/7.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "contentful.csharp.7.4.3.nupkg.sha512",
+        "contentful.csharp.7.5.0.nupkg.sha512",
         "contentful.csharp.nuspec",
         "lib/netstandard2.0/Contentful.Core.dll",
         "lib/netstandard2.0/Contentful.Core.pdb",
@@ -7950,7 +7950,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "contentful.aspnetcore >= 7.4.3"
+      "contentful.aspnetcore >= 7.5.0"
     ]
   },
   "packageFolders": {
@@ -8002,7 +8002,7 @@
         "dependencies": {
           "contentful.aspnetcore": {
             "target": "Package",
-            "version": "[7.4.3, )"
+            "version": "[7.5.0, )"
           }
         },
         "imports": [

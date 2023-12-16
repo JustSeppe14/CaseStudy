@@ -48,7 +48,7 @@
           "dependencies": {
             "contentful.aspnetcore": {
               "target": "Package",
-              "version": "[7.4.3, )"
+              "version": "[7.5.0, )"
             }
           },
           "imports": [

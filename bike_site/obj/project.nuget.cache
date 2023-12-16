@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SgLbp8JEnuKUE9jQxIiWSONXtI+Oe3Mae0VFW5Vd47VsH2NAYCHRdG0Q51Q0J8eTZUE12hA0tzuyFOskjmU86Q==",
+  "dgSpecHash": "e952wPP3/buL4i8zVjHcN50I/DqBUruOkKFy938VIM/HMxTaYSXruOlU6VwkW9cgr7flNC8SdT5+jlHJ0JsUbA==",
   "success": true,
   "projectFilePath": "C:\\Users\\seppe\\OneDrive - Thomas More\\23-24\\Sem1\\DevOps\\Case_Study\\CaseStudy\\bike_site\\bike_site.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\seppe\\.nuget\\packages\\contentful.aspnetcore\\7.4.3\\contentful.aspnetcore.7.4.3.nupkg.sha512",
-    "C:\\Users\\seppe\\.nuget\\packages\\contentful.csharp\\7.4.3\\contentful.csharp.7.4.3.nupkg.sha512",
+    "C:\\Users\\seppe\\.nuget\\packages\\contentful.aspnetcore\\7.5.0\\contentful.aspnetcore.7.5.0.nupkg.sha512",
+    "C:\\Users\\seppe\\.nuget\\packages\\contentful.csharp\\7.5.0\\contentful.csharp.7.5.0.nupkg.sha512",
     "C:\\Users\\seppe\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\seppe\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\seppe\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
