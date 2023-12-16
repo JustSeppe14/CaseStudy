@@ -130,3 +130,4 @@ C:\Users\seppe\OneDrive - Thomas More\23-24\Sem1\DevOps\Case_Study\CaseStudy\bik
 C:\Users\seppe\OneDrive - Thomas More\23-24\Sem1\DevOps\Case_Study\CaseStudy\bike_site\obj\Debug\netcoreapp3.1\bike_site.Views.pdb
 C:\Users\seppe\OneDrive - Thomas More\23-24\Sem1\DevOps\Case_Study\CaseStudy\bike_site\obj\Debug\netcoreapp3.1\bike_site.csproj.CopyComplete
 C:\Users\seppe\OneDrive - Thomas More\23-24\Sem1\DevOps\Case_Study\CaseStudy\bike_site\obj\Debug\netcoreapp3.1\bike_site.genruntimeconfig.cache
+C:\Users\seppe\OneDrive - Thomas More\23-24\Sem1\DevOps\Case_Study\CaseStudy\bike_site\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs

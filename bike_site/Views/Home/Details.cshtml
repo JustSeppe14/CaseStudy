@@ -1,0 +1,17 @@
+﻿@model bike_site.Models.Bikes
+
+<h1>@Model.Model</h1> <small>by @Model.Brand.Name</small></h1>
+
+<h3>@Model.Categories</h3>
+
+<contentful-image url="@Model.Image.First().File.Url" width="400" height="400"></contentful-image>
+
+<p>Groupset: @Model.Groupset</p>
+<p>Amount of gears: @Model.Gears</p>
+<p>Does this bike have suspension? @Model.Suspension</p>
+<p>Price: €@Model.Price</p>
+
+<p>@Model.Description</p>
+
+<p>Website: @Model.BikeSite</p>
+

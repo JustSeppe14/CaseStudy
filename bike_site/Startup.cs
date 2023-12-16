@@ -25,7 +25,7 @@ namespace bike_site
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddContentful(Configuration);
-            services.AddControllersWithViews();
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

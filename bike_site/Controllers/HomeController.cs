@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Contentful.Core;
+using Contentful.Core.Search;
 
 namespace bike_site.Controllers
 {
@@ -24,8 +25,19 @@ namespace bike_site.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var bike = await _client.GetEntries<Bikes>();
+            var qb = QueryBuilder<Bikes>.New.ContentTypeIs("bikeSite");
+
+            var bike = await _client.GetEntries(qb);
             return View(bike);
+        }
+
+        public async Task<IActionResult> Details(string id)
+        {
+            var qb = QueryBuilder<Bikes>.New.ContentTypeIs("bikeSite").FieldEquals(f => f.Slug, id.ToLower());
+
+            var entry = (await _client.GetEntries(qb)).FirstOrDefault();
+
+            return View(entry);
         }
 
         public IActionResult Privacy()
