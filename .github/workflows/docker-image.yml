@@ -14,15 +14,15 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action
+      uses: docker/setup-buildx-action@v2
 
     - name: Log in to your Docker registry
-      run: docker login https://hub.docker.com/r/justseppe14 -u justseppe14 -p ${{ secrets.YourDockerRegistry_Password }}
+      run: docker login -u justseppe14 -p ${{ secrets.YourDockerRegistry_Password }}
 
     - name: Build and push container image to your Docker registry
       run: |
-        docker build -t https://hub.docker.com/r/justseppe14/webpage:${{ github.sha }} .
-        docker push https:/hub.docker.com/r/justseppe14/webpage:${{ github.sha }}
+        docker build -t justseppe14/webpage:${{ github.sha }} .
+        docker push justseppe14/webpage:${{ github.sha }}
 
   deploy:
     runs-on: ubuntu-latest
@@ -39,4 +39,4 @@ jobs:
         app-name: 'bikesite'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_22bb4cd01c3848c38ecc3ccd8db48306 }}
-        images: 'https:/hub.docker.com/r/justseppe14/webpage:${{ github.sha }}'
+        images: 'justseppe14/webpage:${{ github.sha }}'
