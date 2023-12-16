@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 namespace bike_site.Models
 {
-    public class Category
+    public class Type
     {
-      public string Type { get; set; }
+      public string Name { get; set; }
     }
 }

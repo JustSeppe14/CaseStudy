@@ -22,7 +22,7 @@ namespace bike_site.Models
 
        public Brand Brand { get; set;}
 
-       public Category Categories { get; set;}
+       public Type Type{get; set;}
 
        public string Description { get; set;}
 
