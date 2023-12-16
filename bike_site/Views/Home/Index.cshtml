@@ -17,7 +17,7 @@
                 <div class="card h-100">
                     <div class="card-body d-flex flex-column">
                         <contentful-image asset-id="@bike.Image.FirstOrDefault()?.SystemProperties.Id" />
-                        <h5 class="card-title">Model: @bike.Model</h5>
+                        <h5 class="card-title">Models: @bike.Model</h5>
                         <p class="card-text">@bike.Description</p>
                         <div class="mt-auto text-right">
                             <a href="@Url.Action("Details", "Home", new { id = bike.Slug })" class="btn btn-primary">More Information</a>
